@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<package version="0.0.0" uuid="facescan-08d941">
+<package uuid="facescan-08d941" version="0.0.0">
  <names>
   <name lang="en_US">facescan</name>
  </names>
@@ -15,7 +15,7 @@
    <nature>interactive</nature>
    <permissions/>
   </behaviorContent>
-  <dialogContent topicName="bla" typeVersion="1.0">
+  <dialogContent typeVersion="1.0" topicName="bla">
    <topic language="de_DE" path="bla/bla_ged.top"/>
   </dialogContent>
  </contents>
