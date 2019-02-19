@@ -1,18 +1,22 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<package uuid="facescan-08d941">
+<package version="0.0.0" uuid="facescan-08d941">
  <names>
   <name lang="en_US">facescan</name>
  </names>
  <supportedLanguages>
-  <language>en_US</language>
+  <language>de_DE</language>
  </supportedLanguages>
  <descriptionLanguages>
   <language>en_US</language>
+  <language>de_DE</language>
  </descriptionLanguages>
  <contents>
   <behaviorContent path="behavior_1">
    <nature>interactive</nature>
    <permissions/>
   </behaviorContent>
+  <dialogContent topicName="bla" typeVersion="1.0">
+   <topic language="de_DE" path="bla/bla_ged.top"/>
+  </dialogContent>
  </contents>
 </package>
