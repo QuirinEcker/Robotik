@@ -1,0 +1,2 @@
+anstatt 4.1 wird mit 4.09999 gerechnet bzw wird ausgegeben
+erste abfrage doppelt
