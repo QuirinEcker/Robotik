@@ -2,7 +2,7 @@
 <Package name="facescan" format_version="5">
     <Manifest src="manifest.xml" />
     <BehaviorDescriptions>
-        <BehaviorDescription name="behavior" src="behavior_1" xar="behavior.xar" />
+        <BehaviorDescription name="behavior" src="." xar="behavior.xar" />
     </BehaviorDescriptions>
     <Dialogs>
         <Dialog name="bla" src="bla/bla.dlg" />
