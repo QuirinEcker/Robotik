@@ -16,7 +16,7 @@
    <permissions/>
   </behaviorContent>
   <dialogContent topicName="bla" typeVersion="1.0">
-   <topic path="bla/bla_ged.top" language="de_DE"/>
+   <topic language="de_DE" path="bla/bla_ged.top"/>
   </dialogContent>
  </contents>
 </package>

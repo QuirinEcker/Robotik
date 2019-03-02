@@ -14,8 +14,8 @@
     <Timeline enable="0">
       <BehaviorLayer name="behavior_layer1">
         <BehaviorKeyframe name="keyframe1" index="1">
-          <Diagram scale="70.7107">
-            <Box name="Say" id="4" localization="8" tooltip="Say some text. Note that you must open the box to enter the text." x="362" y="226">
+          <Diagram scale="50">
+            <Box name="Say" id="4" localization="8" tooltip="Say some text. Note that you must open the box to enter the text." x="1284" y="266">
               <bitmap>media/images/box/interaction/say.png</bitmap>
               <script language="4">
                 <content>
@@ -226,7 +226,7 @@ class MyClass(GeneratedClass):
               </Timeline>
               <Resource name="Speech" type="Lock" timeout="0" />
             </Box>
-            <Box name="Face Reco." id="1" localization="8" tooltip="Detect people&apos;s face and recognize those which are known by the robot.&#x0A;&#x0A;Note: the robot needs to learn a face with the Learn Face box before he can recognize it." x="133" y="55">
+            <Box name="Face Reco." id="1" localization="8" tooltip="Detect people&apos;s face and recognize those which are known by the robot.&#x0A;&#x0A;Note: the robot needs to learn a face with the Learn Face box before he can recognize it." x="1055" y="95">
               <bitmap>media/images/box/interaction/reco_face.png</bitmap>
               <script language="4">
                 <content>
@@ -310,7 +310,7 @@ class MyClass(GeneratedClass):
                 </BehaviorLayer>
               </Timeline>
             </Box>
-            <Box name="Counter" id="12" localization="-1" tooltip="Represent a counter.&#x0A;&#x0A;Each time the onStart input is stimulated, the counter value is sent on the&#x0A;currentValue output and incremented (or decremented) by Step value, from&#x0A;its Initial value to its Final value set in the parameters. Once the counter value is&#x0A;higher than its Final value, the onReinitialized output is stimulated and&#x0A;the counter is reinitialized to the Initial value.&#x0A;&#x0A;Note: You can also reinitialize the counter by stimulating the onInit&#x0A;input." x="487" y="233">
+            <Box name="Counter" id="12" localization="-1" tooltip="Represent a counter.&#x0A;&#x0A;Each time the onStart input is stimulated, the counter value is sent on the&#x0A;currentValue output and incremented (or decremented) by Step value, from&#x0A;its Initial value to its Final value set in the parameters. Once the counter value is&#x0A;higher than its Final value, the onReinitialized output is stimulated and&#x0A;the counter is reinitialized to the Initial value.&#x0A;&#x0A;Note: You can also reinitialize the counter by stimulating the onInit&#x0A;input." x="1409" y="273">
               <bitmap>media/images/box/loop.png</bitmap>
               <script language="4">
                 <content>
@@ -358,7 +358,7 @@ class MyClass(GeneratedClass):
               <Parameter name="Step value" inherits_from_parent="0" content_type="1" value="1" default_value="1" min="1" max="500" tooltip="The counter value will be incremented or decremented with this value." id="7" />
               <Parameter name="Final value" inherits_from_parent="0" content_type="1" value="500" default_value="5" min="0" max="500" tooltip="It is the maximum (if increasing) or the minimum (if decreasing) value of the&#x0A;counter (thus for the last iteration).&#x0A;&#x0A;After this value, if the onStart input is called, the onReinitialized output will be&#x0A;stimulated and the counter will be reinitialized to its Initial value." id="8" />
             </Box>
-            <Box name="Say (3)" id="14" localization="8" tooltip="Say some text. Note that you must open the box to enter the text." x="687" y="353">
+            <Box name="Say (3)" id="14" localization="8" tooltip="Say some text. Note that you must open the box to enter the text." x="1609" y="393">
               <bitmap>media/images/box/interaction/say.png</bitmap>
               <script language="4">
                 <content>
@@ -569,7 +569,7 @@ class MyClass(GeneratedClass):
               </Timeline>
               <Resource name="Speech" type="Lock" timeout="0" />
             </Box>
-            <Box name="Insert Data" id="5" localization="8" tooltip="Stores in NAOqi&apos;s shared memory the given value at the given key." x="298" y="59">
+            <Box name="Insert Data" id="5" localization="8" tooltip="Stores in NAOqi&apos;s shared memory the given value at the given key." x="1220" y="99">
               <bitmap>media/images/box/sensors/STM.png</bitmap>
               <script language="4">
                 <content>
@@ -600,7 +600,7 @@ class MyClass(GeneratedClass):
               <Output name="onError" type="3" type_size="1" nature="1" inner="0" tooltip="Output when error is raised by the behavior. Contains the error message." id="5" />
               <Parameter name="key" inherits_from_parent="0" content_type="3" value="MyApplication/MyData" default_value="MyApplication/MyData" custom_choice="0" tooltip="" id="6" />
             </Box>
-            <Box name="Get Data" id="19" localization="8" tooltip="Retrieves from NAOqi&apos;s shared memory the given value at the given key." x="550" y="71">
+            <Box name="Get Data" id="19" localization="8" tooltip="Retrieves from NAOqi&apos;s shared memory the given value at the given key." x="1472" y="111">
               <bitmap>media/images/box/sensors/STM.png</bitmap>
               <script language="4">
                 <content>
@@ -631,7 +631,7 @@ class MyClass(GeneratedClass):
               <Output name="onError" type="3" type_size="1" nature="1" inner="0" tooltip="Output when error is raised by the behavior. Contains the error message." id="5" />
               <Parameter name="key" inherits_from_parent="0" content_type="3" value="MyApplication/MyData" default_value="MyApplication/MyData" custom_choice="0" tooltip="" id="6" />
             </Box>
-            <Box name="Say Text (2)" id="20" localization="8" tooltip="Say the text received on its input." x="680" y="76">
+            <Box name="Say Text (2)" id="20" localization="8" tooltip="Say the text received on its input." x="1602" y="116">
               <bitmap>media/images/box/interaction/say.png</bitmap>
               <script language="4">
                 <content>
@@ -687,7 +687,7 @@ class MyClass(GeneratedClass):
               <Parameter name="Speed (%)" inherits_from_parent="1" content_type="1" value="100" default_value="100" min="50" max="200" tooltip="Changes the speed of the voice.&#x0A;&#x0A;Note: For a better effect, you can compensate this parameter with the voice&#x0A;shaping parameter. For example, if you want to increase by 20% the speed, you&#x0A;will have to decrease by 20% the voice shaping to keep a constant average&#x0A;speed." id="6" />
               <Resource name="Speech" type="Lock" timeout="0" />
             </Box>
-            <Box name="Say (1)" id="3" localization="8" tooltip="Say some text. Note that you must open the box to enter the text." x="438" y="65">
+            <Box name="Say (1)" id="3" localization="8" tooltip="Say some text. Note that you must open the box to enter the text." x="1360" y="105">
               <bitmap>media/images/box/interaction/say.png</bitmap>
               <script language="4">
                 <content>
@@ -898,7 +898,7 @@ class MyClass(GeneratedClass):
               </Timeline>
               <Resource name="Speech" type="Lock" timeout="0" />
             </Box>
-            <Box name="If (2)" id="21" localization="8" tooltip="Test a condition and stimulate the then or else outputs depending on the boolean&#x0A;value of the condition.&#x0A;The condition can be set in parameters." x="637" y="233">
+            <Box name="If (2)" id="21" localization="8" tooltip="Test a condition and stimulate the then or else outputs depending on the boolean&#x0A;value of the condition.&#x0A;The condition can be set in parameters." x="1559" y="273">
               <bitmap>media/images/box/box-diagram.png</bitmap>
               <script language="4">
                 <content>

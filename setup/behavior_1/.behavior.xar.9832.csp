@@ -5168,7 +5168,7 @@ class MyClass(GeneratedClass):
               <Timeline enable="1" fps="25" start_frame="1" end_frame="-1" size="-1">
                 <BehaviorLayer name="behavior_layer1">
                   <BehaviorKeyframe name="keyframe1" index="1">
-                    <Diagram scale="118.921">
+                    <Diagram scale="70.7107">
                       <Box name="Say Text" id="2" localization="8" tooltip="Say the text received on its input." x="2289" y="270">
                         <bitmap>media/images/box/interaction/say.png</bitmap>
                         <script language="4">
@@ -5966,11 +5966,11 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped(0)]]>
+		self.onStopped(-6)]]>
                           </content>
                         </script>
                         <pluginContent>
-                          <number>0</number>
+                          <number>-6</number>
                         </pluginContent>
                         <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
                         <Input name="onStart" type="1" type_size="1" nature="1" inner="0" tooltip="To send the number on the output." id="2" />
@@ -9436,6 +9436,87 @@ class MyClass(GeneratedClass):
                 </BehaviorLayer>
               </Timeline>
             </Box>
+            <Box name="Number Edit" id="27" localization="8" tooltip="Send the number you entered when the input is stimulated." plugin="numberedit_plugin" x="248" y="1170">
+              <bitmap>media/images/box/interaction/vocabulary.png</bitmap>
+              <script language="4">
+                <content>
+                  <![CDATA[# /!\ Generated content. Do not edit!
+class MyClass(GeneratedClass):
+	def __init__(self):
+		GeneratedClass.__init__(self)
+
+	def onInput_onStart(self):
+		self.onStopped(0)]]>
+                </content>
+              </script>
+              <pluginContent>
+                <number>0</number>
+              </pluginContent>
+              <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
+              <Input name="onStart" type="1" type_size="1" nature="1" inner="0" tooltip="To send the number on the output." id="2" />
+              <Output name="onStopped" type="2" type_size="1" nature="2" inner="0" tooltip="The number you entered." id="3" />
+            </Box>
+            <Box name="Number Edit (1)" id="28" localization="8" tooltip="Send the number you entered when the input is stimulated." plugin="numberedit_plugin" x="190" y="1260">
+              <bitmap>media/images/box/interaction/vocabulary.png</bitmap>
+              <script language="4">
+                <content>
+                  <![CDATA[# /!\ Generated content. Do not edit!
+class MyClass(GeneratedClass):
+	def __init__(self):
+		GeneratedClass.__init__(self)
+
+	def onInput_onStart(self):
+		self.onStopped(0)]]>
+                </content>
+              </script>
+              <pluginContent>
+                <number>0</number>
+              </pluginContent>
+              <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
+              <Input name="onStart" type="1" type_size="1" nature="1" inner="0" tooltip="To send the number on the output." id="2" />
+              <Output name="onStopped" type="2" type_size="1" nature="2" inner="0" tooltip="The number you entered." id="3" />
+            </Box>
+            <Box name="Multiply (1)" id="29" localization="8" tooltip="Multiply the first input value by the second one and send the result on the output." x="386" y="1192">
+              <bitmap>media/images/box/box-script.png</bitmap>
+              <script language="4">
+                <content>
+                  <![CDATA[import random
+
+class MyClass(GeneratedClass):
+    def __init__(self):
+        GeneratedClass.__init__(self, False)
+        self.rMultiplier = 2.0
+        self.bMultiplicand = False
+        self.bMultiplier = False
+        self.rMultiplicand = 2.0
+
+    def onUnload(self):
+        #puts code for box cleanup here
+        pass
+
+    def onInput_Multiplicand(self, rVal ):
+        self.rMultiplicand = float(rVal)
+        self.bMultiplicand = True
+        self.process()
+
+    def onInput_Multiplier(self, rVal ):
+        self.rMultiplier = float(rVal)
+        self.bMultiplier = True
+        self.process()
+
+    def process(self):
+        if self.bMultiplicand and self.bMultiplier:
+            rRes = self.rMultiplicand + self.rMultiplier
+            self.bMultiplicand = False
+            self.bMultiplier = False
+            self.output_Product( rRes )]]>
+                </content>
+              </script>
+              <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+              <Input name="Multiplicand" type="2" type_size="1" nature="1" inner="0" tooltip="The multiplicand." id="2" />
+              <Input name="Multiplier" type="2" type_size="1" nature="1" inner="0" tooltip="The multiplier." id="3" />
+              <Output name="output_Product" type="2" type_size="1" nature="2" inner="0" tooltip="The product." id="4" />
+            </Box>
             <Link inputowner="2" indexofinput="2" outputowner="1" indexofoutput="3" />
             <Link inputowner="4" indexofinput="2" outputowner="3" indexofoutput="3" />
             <Link inputowner="6" indexofinput="2" outputowner="5" indexofoutput="3" />
@@ -9448,7 +9529,8 @@ class MyClass(GeneratedClass):
             <Link inputowner="19" indexofinput="2" outputowner="0" indexofoutput="2" />
             <Link inputowner="21" indexofinput="2" outputowner="0" indexofoutput="2" />
             <Link inputowner="17" indexofinput="2" outputowner="23" indexofoutput="4" />
-            <Link inputowner="23" indexofinput="2" outputowner="0" indexofoutput="2" />
+            <Link inputowner="29" indexofinput="2" outputowner="27" indexofoutput="3" />
+            <Link inputowner="29" indexofinput="3" outputowner="28" indexofoutput="3" />
           </Diagram>
         </BehaviorKeyframe>
       </BehaviorLayer>
