@@ -14,7 +14,7 @@
     <Timeline enable="0">
       <BehaviorLayer name="behavior_layer1">
         <BehaviorKeyframe name="keyframe1" index="1">
-          <Diagram scale="100">
+          <Diagram scale="84.0896">
             <Box name="Name: " id="1" localization="8" tooltip="Send the text you entered when the input is stimulated." plugin="textedit_plugin" x="50" y="35">
               <bitmap>media/images/box/interaction/vocabulary.png</bitmap>
               <script language="4">
@@ -343,7 +343,7 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("Waypoints \nZuteilung der Tische\n\n\n\n\n\n\n")]]>
+		self.onStopped("Waypoints \r\nZuteilung der Tische\r\n\r\n\r\n\r\n\r\n\r\n\r\n")]]>
                 </content>
               </script>
               <pluginContent>

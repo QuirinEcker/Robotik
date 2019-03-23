@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<package uuid="setup-82c2ea" version="0.0.0">
+<package version="0.0.0" uuid="setup-82c2ea">
  <names>
   <name lang="en_US">Untitled</name>
  </names>
@@ -13,6 +13,8 @@
   <behaviorContent path="behavior_1">
    <userRequestable/>
    <nature>interactive</nature>
+   <descriptions/>
+   <autonomous/>
    <permissions/>
   </behaviorContent>
   <behaviorContent path="dkfmlksdfkl">
