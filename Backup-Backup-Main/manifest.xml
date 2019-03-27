@@ -9,5 +9,11 @@
  <descriptionLanguages>
   <language>en_US</language>
  </descriptionLanguages>
- <contents/>
+ <contents>
+  <behaviorContent path="behavior_1">
+   <userRequestable/>
+   <nature></nature>
+   <permissions/>
+  </behaviorContent>
+ </contents>
 </package>
