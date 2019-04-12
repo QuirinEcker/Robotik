@@ -1,4 +1,4 @@
-# Tasks-Manager
+# Task-Manager
 
 - Speisekarte
   + Karte holen und zu Kunde bringen
@@ -26,6 +26,8 @@
 - Delays entfernen
   - alle Delays entfernen die nicht beabsichtigt waren
 - Abstraktion
+- Gericht abfragen 
+- Abrechnung mit Euro und Cents 
 
 @afterAllTasks
 
